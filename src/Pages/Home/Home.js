@@ -36,7 +36,6 @@ function Home() {
             `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&latitude=${location.data.latitude}&longitude=${location.data.longitude}&maxradiuskm=500&minmagnitude=2&starttime=${(timeset.toISOString()).split('T').shift()}`
             );
         setEarthData(searchEarthquake.data.features)
-        console.log(searchEarthquake.data)
         }
         
         const searchLocation = async (searchData) => {
