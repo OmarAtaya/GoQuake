@@ -105,12 +105,14 @@ function Home() {
                                     <Popup>
                                         {point.properties.title}
                                     </Popup>
-                                </Marker>
+                                </Marker>  
                             )
                         })}
                         <Circle 
                             center={{lat:lati, lng: long}}
-                            fillColor="red" 
+                            fillColor="transparent"
+                            weight={1}
+                            color="red"
                             radius={500000}
                         />
                     </MapContainer>
